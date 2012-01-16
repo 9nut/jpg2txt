@@ -1,0 +1,6 @@
+This Google App Engine servlet lets you upload a PNG or JPG file (or
+supply a URL to a PNG or JPG) and generates an ASCII-art version of
+the image; it uses the iascii encoder package.  The generated image
+uses only text characters (one per pixel) and will be displayed in
+fixed width font inside <pre> tags.  Some of the convenience functions
+were copied from Moustachio (http://moustach-io.appspot.com/)

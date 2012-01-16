@@ -1,0 +1,112 @@
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<title>IASCII</title>
+	<link rel="stylesheet" href="http://yui.yahooapis.com/3.4.1/build/cssreset/cssreset.css" type="text/css">
+	<link rel="stylesheet" href="http://yui.yahooapis.com/3.4.1/build/cssfonts/cssfonts.css" type="text/css">
+	<link rel="stylesheet" href="http://yui.yahooapis.com/3.4.1/build/cssgrids/cssgrids.css" type="text/css">
+	<script src="http://yui.yahooapis.com/3.4.1/build/yui/yui-min.js"></script>
+<style>
+div.yui3-g {
+    /* text-align:center; */
+    /* vertical-align:middle; */
+}
+
+body {
+	margin-left: 10px; /* left gutter */
+	margin-right: 10px;
+}
+
+.content {
+	background:#777;
+	border:solid 2px #333;
+	color:#fff;
+	padding:5px 2px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+.content table {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+}
+
+#hd {
+	background: #999;
+	font:200% san-serif;
+	text-align:center;
+	border:solid 2px #333;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+#ft {
+	background: #999;
+	font:80% san-serif;
+	padding: 1em;
+	text-align: center;
+	border:solid 2px #333;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+</style></head>
+<body id="doc">
+<div id="hd">
+	<img src="/static/img2txt.png"/><h1>JPG/PNG → ASCII-art</h1>
+</div>
+<div class="yui3-g">
+    <div class="yui3-u-1-3">
+        <div class="content">
+	<p>Generates an ASCII-art image from a JPG or a PNG image.</p>
+	<br><br>
+	<p>
+	<form action="/" method="POST" enctype="multipart/form-data">
+	<table>
+		<tr>
+		<td>File</td>
+		<td><input type="file" name="image"></td>
+		</tr>
+		<tr>
+		<td><legend>OR URL</legend></td>
+		<td><input type="url" name="url"></td>
+		</tr>
+		<tr>
+		<td></td><td><input type="submit" value="Convert"></td>
+		</tr>
+	</table>
+	</form>
+	</p>
+        </div>
+    </div>
+    <div class="yui3-u-2-3">
+        <div class="content">
+«.section @»
+	<p>Output</p>
+	<div style="font-family:monospace; font-size:5pt"><pre>
+«@»
+	</pre></div>
+«.end»
+        </div>
+    </div>
+</div>
+<div id="ft">
+	<p style="align:center">Copyright © 2012 - Go Authors</p>
+</div>
+</body>
+</html>
