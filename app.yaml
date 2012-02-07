@@ -1,7 +1,7 @@
 application: jpg2txt
-version: 1
+version: 2
 runtime: go
-api_version: 3
+api_version: go1beta
 
 handlers:
 - url: /static

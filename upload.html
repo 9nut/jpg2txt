@@ -68,7 +68,7 @@ body {
 <div class="yui3-g">
     <div class="yui3-u-1-4">
         <div class="content">
-	<p><b>jpg2txt</b> generates an ASCII-art image from a JPG or a PNG image. This <a href="https://github.com/9nut/jpg2txt">Github Repository</a> contains the sources.
+	<p><b>jpg2txt</b> generates an ASCII-art image from a JPG or a PNG image; if either the height or the width of the image is greater than 300 pixels, it will first be resized. This <a href="https://github.com/9nut/jpg2txt">Github Repository</a> contains the sources.
 </p>
 	<br><br>
 	<p>
@@ -92,12 +92,12 @@ body {
     </div>
     <div class="yui3-u-3-4">
         <div class="content">
-«.section @»
+{{if .}}
 	<p>Output</p>
 	<div style="font-family:monospace; font-size:5pt"><pre>
-«@»
+{{.|html}}
 	</pre></div>
-«.end»
+{{end}}
         </div>
     </div>
 </div>
